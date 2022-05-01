@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040CAC73266A1CDD00D32102 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CAC72266A1CDD00D32102 /* Device.swift */; };
+		040CAC75266A1D1200D32102 /* DeviceVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CAC74266A1D1200D32102 /* DeviceVisibility.swift */; };
+		040CAC7B266B156500D32102 /* Subscription.wav in Resources */ = {isa = PBXBuildFile; fileRef = 040CAC79266B156500D32102 /* Subscription.wav */; };
+		040CAC7C266B156500D32102 /* Follow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 040CAC7A266B156500D32102 /* Follow.wav */; };
+		040CAC7E266B1C2500D32102 /* AlertNativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CAC7D266B1C2500D32102 /* AlertNativeView.swift */; };
+		040CAC82266B20A400D32102 /* FollowerScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 040CAC81266B20A400D32102 /* FollowerScene.sks */; };
+		040CACA7266B215D00D32102 /* FollowerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CACA6266B215D00D32102 /* FollowerScene.swift */; };
+		040CACA9266C897300D32102 /* GeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040CACA8266C897300D32102 /* GeometryExtensions.swift */; };
+		040CACAB266C8D5300D32102 /* SE-Frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 040CACAA266C8D5300D32102 /* SE-Frame.png */; };
+		042BB812280D56F800100E82 /* AlertWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB811280D56F800100E82 /* AlertWindowController.swift */; };
+		042BB815280D577E00100E82 /* AlertWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB814280D577E00100E82 /* AlertWebView.swift */; };
+		042BB81E280D592700100E82 /* OAuthDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB81D280D592700100E82 /* OAuthDecoder.swift */; };
+		042BB820280D594D00100E82 /* OAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB81F280D594D00100E82 /* OAuthResponse.swift */; };
+		042BB822280D596E00100E82 /* TwitchFollowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB821280D596E00100E82 /* TwitchFollowEvent.swift */; };
+		042BB824280D59B200100E82 /* FollowerSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB823280D59B200100E82 /* FollowerSceneView.swift */; };
+		042BB826280D59E700100E82 /* FollowActionRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB825280D59E700100E82 /* FollowActionRandomizer.swift */; };
+		042BB828280D5A1000100E82 /* PulseActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB827280D5A1000100E82 /* PulseActionFactory.swift */; };
+		042BB82A280D5A3000100E82 /* WiggleActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB829280D5A3000100E82 /* WiggleActionFactory.swift */; };
+		042BB82D280D5E0B00100E82 /* TwitchChat in Frameworks */ = {isa = PBXBuildFile; productRef = 042BB82C280D5E0B00100E82 /* TwitchChat */; };
+		042BB82F280D610000100E82 /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB82E280D610000100E82 /* ChatClient.swift */; };
+		042BB831280D611700100E82 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB830280D611700100E82 /* Defaults.swift */; };
+		042BB834280D617B00100E82 /* DefaultsValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB833280D617B00100E82 /* DefaultsValue.swift */; };
+		042BB836280D61A800100E82 /* DefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB835280D61A800100E82 /* DefaultsKey.swift */; };
+		042BB838280D649E00100E82 /* EnvironmentVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB837280D649E00100E82 /* EnvironmentVariable.swift */; };
+		042BB83A280D652800100E82 /* OAuthRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB839280D652800100E82 /* OAuthRefresher.swift */; };
+		042BB83D280D73E200100E82 /* ChatWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB83C280D73E200100E82 /* ChatWindow.swift */; };
+		042BB83F280D73FC00100E82 /* ChatWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB83E280D73FC00100E82 /* ChatWindowController.swift */; };
+		042BB841280D745800100E82 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB840280D745800100E82 /* ChatViewController.swift */; };
+		042BB843280D74D300100E82 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB842280D74D300100E82 /* ChatView.swift */; };
+		042BB845280D7D8700100E82 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB844280D7D8700100E82 /* ChatBubble.swift */; };
+		042BB848280D897200100E82 /* ChatBubbleBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB847280D897200100E82 /* ChatBubbleBackground.swift */; };
+		042BB84A280D899000100E82 /* ChatBubbleBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB849280D899000100E82 /* ChatBubbleBorder.swift */; };
+		042BB84C280D8A8400100E82 /* ChatSpeakerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB84B280D8A8400100E82 /* ChatSpeakerLabel.swift */; };
+		042BB84E280D8C4F00100E82 /* ChatMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BB84D280D8C4F00100E82 /* ChatMessageLabel.swift */; };
+		042E6E7E280E294D00EC5255 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E6E7D280E294D00EC5255 /* ColorExtensions.swift */; };
+		042E6E80280E2AC600EC5255 /* StringProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E6E7F280E2AC600EC5255 /* StringProtocolExtensions.swift */; };
+		042E6E82280E310700EC5255 /* ChatMessageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E6E81280E310700EC5255 /* ChatMessageRenderer.swift */; };
+		042E6E84280E3B7400EC5255 /* DownloadedEmote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042E6E83280E3B7400EC5255 /* DownloadedEmote.swift */; };
+		04389E82262D692B004D49B7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04389E7C262D692A004D49B7 /* Actions.sks */; };
+		04389E83262D692B004D49B7 /* Shower.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04389E7D262D692A004D49B7 /* Shower.sks */; };
+		04389E84262D692B004D49B7 /* Cannon.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04389E7E262D692A004D49B7 /* Cannon.sks */; };
+		04389E85262D692B004D49B7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04389E7F262D692B004D49B7 /* GameScene.sks */; };
+		04389E86262D692B004D49B7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04389E80262D692B004D49B7 /* GameScene.swift */; };
+		04389E87262D692B004D49B7 /* overture.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 04389E81262D692B004D49B7 /* overture.m4a */; };
+		04389E8A262D6965004D49B7 /* QuicksilverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04389E89262D6965004D49B7 /* QuicksilverView.swift */; };
+		043C28D4265B44F20054A5A8 /* TwitchAlerts.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 043C28D3265B44F20054A5A8 /* TwitchAlerts.sdef */; };
+		043C28D6265B4C5D0054A5A8 /* DeviceVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C28D5265B4C5D0054A5A8 /* DeviceVideoController.swift */; };
+		049375A1266C9C8D00435854 /* iPad-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0493759F266C9C8D00435854 /* iPad-Portrait.png */; };
+		049375A2266C9C8D00435854 /* iPad-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 049375A0266C9C8D00435854 /* iPad-Landscape.png */; };
+		04B32D4F26574219008BB788 /* DeviceVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B32D4E26574219008BB788 /* DeviceVideoView.swift */; };
+		04F090B725E0B48400966C1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090B625E0B48400966C1E /* AppDelegate.swift */; };
+		04F090B925E0B48400966C1E /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090B825E0B48400966C1E /* AlertViewController.swift */; };
+		04F090BB25E0B48600966C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F090BA25E0B48600966C1E /* Assets.xcassets */; };
+		04F090BE25E0B48600966C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F090BC25E0B48600966C1E /* Main.storyboard */; };
+		04F090C825E0B52500966C1E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090C725E0B52500966C1E /* AlertView.swift */; };
+		04F090CC25E0B99800966C1E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090CB25E0B99800966C1E /* Constants.swift */; };
+		04F090CF25E0BAA600966C1E /* TransparentWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090CE25E0BAA600966C1E /* TransparentWebView.swift */; };
+		04F090D225E0BBFA00966C1E /* AlertWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090D125E0BBFA00966C1E /* AlertWindow.swift */; };
+		04F090D625E0CBF700966C1E /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F090D525E0CBF700966C1E /* TwitchAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		042BB80D280D53AC00100E82 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		040CAC72266A1CDD00D32102 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		040CAC74266A1D1200D32102 /* DeviceVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVisibility.swift; sourceTree = "<group>"; };
+		040CAC79266B156500D32102 /* Subscription.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Subscription.wav; sourceTree = "<group>"; };
+		040CAC7A266B156500D32102 /* Follow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Follow.wav; sourceTree = "<group>"; };
+		040CAC7D266B1C2500D32102 /* AlertNativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertNativeView.swift; sourceTree = "<group>"; };
+		040CAC81266B20A400D32102 /* FollowerScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FollowerScene.sks; sourceTree = "<group>"; };
+		040CACA6266B215D00D32102 /* FollowerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerScene.swift; sourceTree = "<group>"; };
+		040CACA8266C897300D32102 /* GeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryExtensions.swift; sourceTree = "<group>"; };
+		040CACAA266C8D5300D32102 /* SE-Frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SE-Frame.png"; sourceTree = "<group>"; };
+		042BB811280D56F800100E82 /* AlertWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowController.swift; sourceTree = "<group>"; };
+		042BB814280D577E00100E82 /* AlertWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWebView.swift; sourceTree = "<group>"; };
+		042BB81D280D592700100E82 /* OAuthDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthDecoder.swift; sourceTree = "<group>"; };
+		042BB81F280D594D00100E82 /* OAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthResponse.swift; sourceTree = "<group>"; };
+		042BB821280D596E00100E82 /* TwitchFollowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchFollowEvent.swift; sourceTree = "<group>"; };
+		042BB823280D59B200100E82 /* FollowerSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerSceneView.swift; sourceTree = "<group>"; };
+		042BB825280D59E700100E82 /* FollowActionRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowActionRandomizer.swift; sourceTree = "<group>"; };
+		042BB827280D5A1000100E82 /* PulseActionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseActionFactory.swift; sourceTree = "<group>"; };
+		042BB829280D5A3000100E82 /* WiggleActionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiggleActionFactory.swift; sourceTree = "<group>"; };
+		042BB82E280D610000100E82 /* ChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
+		042BB830280D611700100E82 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		042BB833280D617B00100E82 /* DefaultsValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsValue.swift; sourceTree = "<group>"; };
+		042BB835280D61A800100E82 /* DefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKey.swift; sourceTree = "<group>"; };
+		042BB837280D649E00100E82 /* EnvironmentVariable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVariable.swift; sourceTree = "<group>"; };
+		042BB839280D652800100E82 /* OAuthRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRefresher.swift; sourceTree = "<group>"; };
+		042BB83C280D73E200100E82 /* ChatWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindow.swift; sourceTree = "<group>"; };
+		042BB83E280D73FC00100E82 /* ChatWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowController.swift; sourceTree = "<group>"; };
+		042BB840280D745800100E82 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		042BB842280D74D300100E82 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		042BB844280D7D8700100E82 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		042BB847280D897200100E82 /* ChatBubbleBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleBackground.swift; sourceTree = "<group>"; };
+		042BB849280D899000100E82 /* ChatBubbleBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleBorder.swift; sourceTree = "<group>"; };
+		042BB84B280D8A8400100E82 /* ChatSpeakerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSpeakerLabel.swift; sourceTree = "<group>"; };
+		042BB84D280D8C4F00100E82 /* ChatMessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageLabel.swift; sourceTree = "<group>"; };
+		042E6E7D280E294D00EC5255 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		042E6E7F280E2AC600EC5255 /* StringProtocolExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocolExtensions.swift; sourceTree = "<group>"; };
+		042E6E81280E310700EC5255 /* ChatMessageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRenderer.swift; sourceTree = "<group>"; };
+		042E6E83280E3B7400EC5255 /* DownloadedEmote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedEmote.swift; sourceTree = "<group>"; };
+		04389E7C262D692A004D49B7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		04389E7D262D692A004D49B7 /* Shower.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Shower.sks; sourceTree = "<group>"; };
+		04389E7E262D692A004D49B7 /* Cannon.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cannon.sks; sourceTree = "<group>"; };
+		04389E7F262D692B004D49B7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		04389E80262D692B004D49B7 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		04389E81262D692B004D49B7 /* overture.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = overture.m4a; sourceTree = "<group>"; };
+		04389E89262D6965004D49B7 /* QuicksilverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksilverView.swift; sourceTree = "<group>"; };
+		043C28D3265B44F20054A5A8 /* TwitchAlerts.sdef */ = {isa = PBXFileReference; lastKnownFileType = text; path = TwitchAlerts.sdef; sourceTree = "<group>"; };
+		043C28D5265B4C5D0054A5A8 /* DeviceVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVideoController.swift; sourceTree = "<group>"; };
+		0493759F266C9C8D00435854 /* iPad-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad-Portrait.png"; sourceTree = "<group>"; };
+		049375A0266C9C8D00435854 /* iPad-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad-Landscape.png"; sourceTree = "<group>"; };
+		04B32D4E26574219008BB788 /* DeviceVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceVideoView.swift; sourceTree = "<group>"; };
+		04F090B325E0B48400966C1E /* TwitchAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F090B625E0B48400966C1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F090B825E0B48400966C1E /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		04F090BA25E0B48600966C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F090BD25E0B48600966C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F090BF25E0B48600966C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F090C025E0B48600966C1E /* TwitchAlerts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwitchAlerts.entitlements; sourceTree = "<group>"; };
+		04F090C725E0B52500966C1E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		04F090CB25E0B99800966C1E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04F090CE25E0BAA600966C1E /* TransparentWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWebView.swift; sourceTree = "<group>"; };
+		04F090D125E0BBFA00966C1E /* AlertWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindow.swift; sourceTree = "<group>"; };
+		04F090D525E0CBF700966C1E /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F090B025E0B48400966C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BB82D280D5E0B00100E82 /* TwitchChat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		040CAC78266B152300D32102 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				040CAC7A266B156500D32102 /* Follow.wav */,
+				040CAC79266B156500D32102 /* Subscription.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		040CACA5266B214F00D32102 /* Native Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				040CAC7D266B1C2500D32102 /* AlertNativeView.swift */,
+				042BB825280D59E700100E82 /* FollowActionRandomizer.swift */,
+				040CAC81266B20A400D32102 /* FollowerScene.sks */,
+				040CACA6266B215D00D32102 /* FollowerScene.swift */,
+				042BB823280D59B200100E82 /* FollowerSceneView.swift */,
+				042BB827280D5A1000100E82 /* PulseActionFactory.swift */,
+				042BB829280D5A3000100E82 /* WiggleActionFactory.swift */,
+			);
+			path = "Native Alerts";
+			sourceTree = "<group>";
+		};
+		042BB813280D576200100E82 /* Web Views */ = {
+			isa = PBXGroup;
+			children = (
+				042BB814280D577E00100E82 /* AlertWebView.swift */,
+				04F090CE25E0BAA600966C1E /* TransparentWebView.swift */,
+			);
+			path = "Web Views";
+			sourceTree = "<group>";
+		};
+		042BB818280D57FA00100E82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04F090BA25E0B48600966C1E /* Assets.xcassets */,
+				04F090BC25E0B48600966C1E /* Main.storyboard */,
+				04F090BF25E0B48600966C1E /* Info.plist */,
+				04F090C025E0B48600966C1E /* TwitchAlerts.entitlements */,
+				043C28D3265B44F20054A5A8 /* TwitchAlerts.sdef */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		042BB819280D581900100E82 /* Device Frames */ = {
+			isa = PBXGroup;
+			children = (
+				049375A0266C9C8D00435854 /* iPad-Landscape.png */,
+				0493759F266C9C8D00435854 /* iPad-Portrait.png */,
+				040CACAA266C8D5300D32102 /* SE-Frame.png */,
+			);
+			path = "Device Frames";
+			sourceTree = "<group>";
+		};
+		042BB81A280D584900100E82 /* Alert Window */ = {
+			isa = PBXGroup;
+			children = (
+				04F090C725E0B52500966C1E /* AlertView.swift */,
+				04F090B825E0B48400966C1E /* AlertViewController.swift */,
+				04F090D125E0BBFA00966C1E /* AlertWindow.swift */,
+				042BB811280D56F800100E82 /* AlertWindowController.swift */,
+			);
+			path = "Alert Window";
+			sourceTree = "<group>";
+		};
+		042BB81B280D586400100E82 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04F090B625E0B48400966C1E /* AppDelegate.swift */,
+				04F090CB25E0B99800966C1E /* Constants.swift */,
+				042BB837280D649E00100E82 /* EnvironmentVariable.swift */,
+				042BB832280D616400100E82 /* Defaults */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		042BB81C280D590600100E82 /* Twitch */ = {
+			isa = PBXGroup;
+			children = (
+				042BB81D280D592700100E82 /* OAuthDecoder.swift */,
+				042BB81F280D594D00100E82 /* OAuthResponse.swift */,
+				04F090D525E0CBF700966C1E /* TwitchAPI.swift */,
+				042BB821280D596E00100E82 /* TwitchFollowEvent.swift */,
+				042BB839280D652800100E82 /* OAuthRefresher.swift */,
+			);
+			path = Twitch;
+			sourceTree = "<group>";
+		};
+		042BB832280D616400100E82 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				042BB830280D611700100E82 /* Defaults.swift */,
+				042BB833280D617B00100E82 /* DefaultsValue.swift */,
+				042BB835280D61A800100E82 /* DefaultsKey.swift */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		042BB83B280D72AD00100E82 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				042BB82E280D610000100E82 /* ChatClient.swift */,
+				042BB83C280D73E200100E82 /* ChatWindow.swift */,
+				042BB83E280D73FC00100E82 /* ChatWindowController.swift */,
+				042BB840280D745800100E82 /* ChatViewController.swift */,
+				042BB842280D74D300100E82 /* ChatView.swift */,
+				042BB846280D896000100E82 /* Bubble */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		042BB846280D896000100E82 /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				042BB844280D7D8700100E82 /* ChatBubble.swift */,
+				042E6E81280E310700EC5255 /* ChatMessageRenderer.swift */,
+				042E6E83280E3B7400EC5255 /* DownloadedEmote.swift */,
+				042BB84B280D8A8400100E82 /* ChatSpeakerLabel.swift */,
+				042BB84D280D8C4F00100E82 /* ChatMessageLabel.swift */,
+				042BB847280D897200100E82 /* ChatBubbleBackground.swift */,
+				042BB849280D899000100E82 /* ChatBubbleBorder.swift */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
+		042E6E7C280E293E00EC5255 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				042E6E7D280E294D00EC5255 /* ColorExtensions.swift */,
+				040CACA8266C897300D32102 /* GeometryExtensions.swift */,
+				042E6E7F280E2AC600EC5255 /* StringProtocolExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04389E7B262D68F8004D49B7 /* Project Quicksilver */ = {
+			isa = PBXGroup;
+			children = (
+				04389E89262D6965004D49B7 /* QuicksilverView.swift */,
+				04389E7C262D692A004D49B7 /* Actions.sks */,
+				04389E7E262D692A004D49B7 /* Cannon.sks */,
+				04389E7F262D692B004D49B7 /* GameScene.sks */,
+				04389E80262D692B004D49B7 /* GameScene.swift */,
+				04389E81262D692B004D49B7 /* overture.m4a */,
+				04389E7D262D692A004D49B7 /* Shower.sks */,
+			);
+			path = "Project Quicksilver";
+			sourceTree = "<group>";
+		};
+		043C28D7265B4C630054A5A8 /* Device Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				042BB819280D581900100E82 /* Device Frames */,
+				040CAC72266A1CDD00D32102 /* Device.swift */,
+				043C28D5265B4C5D0054A5A8 /* DeviceVideoController.swift */,
+				04B32D4E26574219008BB788 /* DeviceVideoView.swift */,
+				040CAC74266A1D1200D32102 /* DeviceVisibility.swift */,
+			);
+			path = "Device Overlays";
+			sourceTree = "<group>";
+		};
+		04F090AA25E0B48400966C1E = {
+			isa = PBXGroup;
+			children = (
+				04F090B525E0B48400966C1E /* TwitchAlerts */,
+				04F090B425E0B48400966C1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04F090B425E0B48400966C1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F090B325E0B48400966C1E /* TwitchAlerts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F090B525E0B48400966C1E /* TwitchAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				042E6E7C280E293E00EC5255 /* Extensions */,
+				042BB81A280D584900100E82 /* Alert Window */,
+				042BB81B280D586400100E82 /* Application */,
+				042BB83B280D72AD00100E82 /* Chat */,
+				043C28D7265B4C630054A5A8 /* Device Overlays */,
+				040CACA5266B214F00D32102 /* Native Alerts */,
+				04389E7B262D68F8004D49B7 /* Project Quicksilver */,
+				040CAC78266B152300D32102 /* Sounds */,
+				042BB818280D57FA00100E82 /* Supporting Files */,
+				042BB81C280D590600100E82 /* Twitch */,
+				042BB813280D576200100E82 /* Web Views */,
+			);
+			path = TwitchAlerts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F090B225E0B48400966C1E /* TwitchAlerts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F090C325E0B48600966C1E /* Build configuration list for PBXNativeTarget "TwitchAlerts" */;
+			buildPhases = (
+				04F090AF25E0B48400966C1E /* Sources */,
+				04F090B025E0B48400966C1E /* Frameworks */,
+				04F090B125E0B48400966C1E /* Resources */,
+				042BB80D280D53AC00100E82 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchAlerts;
+			packageProductDependencies = (
+				042BB82C280D5E0B00100E82 /* TwitchChat */,
+			);
+			productName = TwitchAlerts;
+			productReference = 04F090B325E0B48400966C1E /* TwitchAlerts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F090AB25E0B48400966C1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Cocoatype, LLC";
+				TargetAttributes = {
+					04F090B225E0B48400966C1E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 04F090AE25E0B48400966C1E /* Build configuration list for PBXProject "TwitchAlerts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F090AA25E0B48400966C1E;
+			packageReferences = (
+				042BB82B280D5E0B00100E82 /* XCRemoteSwiftPackageReference "chat" */,
+			);
+			productRefGroup = 04F090B425E0B48400966C1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F090B225E0B48400966C1E /* TwitchAlerts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F090B125E0B48400966C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040CAC7B266B156500D32102 /* Subscription.wav in Resources */,
+				04F090BB25E0B48600966C1E /* Assets.xcassets in Resources */,
+				04389E87262D692B004D49B7 /* overture.m4a in Resources */,
+				049375A2266C9C8D00435854 /* iPad-Landscape.png in Resources */,
+				04389E83262D692B004D49B7 /* Shower.sks in Resources */,
+				04389E84262D692B004D49B7 /* Cannon.sks in Resources */,
+				04389E82262D692B004D49B7 /* Actions.sks in Resources */,
+				049375A1266C9C8D00435854 /* iPad-Portrait.png in Resources */,
+				04389E85262D692B004D49B7 /* GameScene.sks in Resources */,
+				040CAC7C266B156500D32102 /* Follow.wav in Resources */,
+				043C28D4265B44F20054A5A8 /* TwitchAlerts.sdef in Resources */,
+				04F090BE25E0B48600966C1E /* Main.storyboard in Resources */,
+				040CAC82266B20A400D32102 /* FollowerScene.sks in Resources */,
+				040CACAB266C8D5300D32102 /* SE-Frame.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F090AF25E0B48400966C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040CAC73266A1CDD00D32102 /* Device.swift in Sources */,
+				042BB831280D611700100E82 /* Defaults.swift in Sources */,
+				04B32D4F26574219008BB788 /* DeviceVideoView.swift in Sources */,
+				042BB841280D745800100E82 /* ChatViewController.swift in Sources */,
+				042BB843280D74D300100E82 /* ChatView.swift in Sources */,
+				04389E8A262D6965004D49B7 /* QuicksilverView.swift in Sources */,
+				042BB826280D59E700100E82 /* FollowActionRandomizer.swift in Sources */,
+				042BB845280D7D8700100E82 /* ChatBubble.swift in Sources */,
+				042BB812280D56F800100E82 /* AlertWindowController.swift in Sources */,
+				042BB815280D577E00100E82 /* AlertWebView.swift in Sources */,
+				04F090D225E0BBFA00966C1E /* AlertWindow.swift in Sources */,
+				042BB836280D61A800100E82 /* DefaultsKey.swift in Sources */,
+				042BB84A280D899000100E82 /* ChatBubbleBorder.swift in Sources */,
+				04F090B925E0B48400966C1E /* AlertViewController.swift in Sources */,
+				040CACA7266B215D00D32102 /* FollowerScene.swift in Sources */,
+				042E6E82280E310700EC5255 /* ChatMessageRenderer.swift in Sources */,
+				04389E86262D692B004D49B7 /* GameScene.swift in Sources */,
+				04F090B725E0B48400966C1E /* AppDelegate.swift in Sources */,
+				042BB82F280D610000100E82 /* ChatClient.swift in Sources */,
+				042BB824280D59B200100E82 /* FollowerSceneView.swift in Sources */,
+				042BB834280D617B00100E82 /* DefaultsValue.swift in Sources */,
+				042E6E80280E2AC600EC5255 /* StringProtocolExtensions.swift in Sources */,
+				042BB82A280D5A3000100E82 /* WiggleActionFactory.swift in Sources */,
+				04F090D625E0CBF700966C1E /* TwitchAPI.swift in Sources */,
+				042BB838280D649E00100E82 /* EnvironmentVariable.swift in Sources */,
+				040CACA9266C897300D32102 /* GeometryExtensions.swift in Sources */,
+				040CAC75266A1D1200D32102 /* DeviceVisibility.swift in Sources */,
+				042BB83A280D652800100E82 /* OAuthRefresher.swift in Sources */,
+				042BB84E280D8C4F00100E82 /* ChatMessageLabel.swift in Sources */,
+				04F090C825E0B52500966C1E /* AlertView.swift in Sources */,
+				042BB84C280D8A8400100E82 /* ChatSpeakerLabel.swift in Sources */,
+				043C28D6265B4C5D0054A5A8 /* DeviceVideoController.swift in Sources */,
+				042BB81E280D592700100E82 /* OAuthDecoder.swift in Sources */,
+				04F090CF25E0BAA600966C1E /* TransparentWebView.swift in Sources */,
+				042BB83F280D73FC00100E82 /* ChatWindowController.swift in Sources */,
+				042BB848280D897200100E82 /* ChatBubbleBackground.swift in Sources */,
+				040CAC7E266B1C2500D32102 /* AlertNativeView.swift in Sources */,
+				04F090CC25E0B99800966C1E /* Constants.swift in Sources */,
+				042BB822280D596E00100E82 /* TwitchFollowEvent.swift in Sources */,
+				042E6E84280E3B7400EC5255 /* DownloadedEmote.swift in Sources */,
+				042BB83D280D73E200100E82 /* ChatWindow.swift in Sources */,
+				042BB828280D5A1000100E82 /* PulseActionFactory.swift in Sources */,
+				042BB820280D594D00100E82 /* OAuthResponse.swift in Sources */,
+				042E6E7E280E294D00EC5255 /* ColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04F090BC25E0B48600966C1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F090BD25E0B48600966C1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F090C125E0B48600966C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F090C225E0B48600966C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		04F090C425E0B48600966C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TwitchAlerts/TwitchAlerts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 287EDDET2B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TwitchAlerts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoatype.TwitchAlerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		04F090C525E0B48600966C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TwitchAlerts/TwitchAlerts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 287EDDET2B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TwitchAlerts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoatype.TwitchAlerts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F090AE25E0B48400966C1E /* Build configuration list for PBXProject "TwitchAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F090C125E0B48600966C1E /* Debug */,
+				04F090C225E0B48600966C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F090C325E0B48600966C1E /* Build configuration list for PBXNativeTarget "TwitchAlerts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F090C425E0B48600966C1E /* Debug */,
+				04F090C525E0B48600966C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		042BB82B280D5E0B00100E82 /* XCRemoteSwiftPackageReference "chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@git.pado.name:twitch/chat.git";
+			requirement = {
+				branch = trunk;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		042BB82C280D5E0B00100E82 /* TwitchChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042BB82B280D5E0B00100E82 /* XCRemoteSwiftPackageReference "chat" */;
+			productName = TwitchChat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04F090AB25E0B48400966C1E /* Project object */;
+}
